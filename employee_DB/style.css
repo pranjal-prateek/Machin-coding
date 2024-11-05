@@ -1,0 +1,46 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --btn-hover: rgb(113, 113, 240);
+  --item-bg: rgb(197, 195, 195);
+  --modal-bg: rgb(220, 217, 217);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add_button {
+  border-radius: 50px;
+  background-color: transparent;
+  color: black;
+  padding: 16px;
+  border: 1px solid rgb(155, 155, 237);
+  cursor: pointer;
+}
+.add_button:hover {
+  background-color: var(--btn-hover);
+}
+.employees {
+  display: flex;
+}
+.employees > div {
+  border: 1px solid black;
+  overflow-y: scroll;
+  height: 450px;
+}
+.employe_name {
+  width: 30%;
+}
+.employe_single {
+  width: 70%;
+}
+
+.employe_name,
+.employe_single {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
