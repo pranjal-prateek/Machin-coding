@@ -5,6 +5,7 @@ body {
 :root {
   --btn-hover: rgb(113, 113, 240);
   --item-bg: rgb(197, 195, 195);
+  --item-bg-hover: rgb(147, 146, 146);
   --modal-bg: rgb(220, 217, 217);
 }
 .header {
@@ -43,4 +44,32 @@ body {
   display: flex;
   padding: 10px;
   flex-direction: column;
+}
+.employee_single--title,
+.employee_name--title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+.employee_name--list {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.employee_name--item {
+  padding: 10px;
+  background-color: var(--item-bg);
+  border-bottom: 1px solid rgb(211, 211, 211);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  text-align: center;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.employee_name--item:hover,
+.selected {
+  background-color: var(--item-bg-hover);
 }
